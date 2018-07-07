@@ -7,7 +7,7 @@ var cartoons = ["SpongeBob SquarePants", "Bugs Bunny", "Homer Simpson", "Mickey 
 // FUNCTIONS
 //****************************************************************************************************************
 
-function createButtons() {
+function cartoonButtons() {
     $("#cartoonButtons").empty();
     for (var i = 0; i < cartoons.length; i++) {
         var cartoonText = cartoons[i];
@@ -24,7 +24,7 @@ function createButtons() {
 //***************************************************************************************************************
 $(document).ready(function () {
 
-    createButtons();
+    cartoonButtons();
 
     $(document).on('click', ".cartoonButton", function () {
         var q = $(this).attr("cartoon");
@@ -60,8 +60,7 @@ $(document).ready(function () {
         var movie = $("#cartoon-input").val().trim();
         cartoons.push(movie);
 
-        // Calling renderButtons which handles the processing of our movie array
-        createButtons();
+        cartoonButtons();
     });
 
     $(document).on('click', ".cartoonGif", function () {
