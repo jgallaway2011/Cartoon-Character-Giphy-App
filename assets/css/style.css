@@ -1,14 +1,23 @@
-.cartoonButton {
-    margin: 5px;
+
+/* Adds background */
+body {
+    background: url("../images/dustScratches.png") #777777;
 }
 
+/* Adds margin and background-color to all buttons */
+.btn {
+    margin: 5px;
+    background-color: #4aaaa5
+}
+
+/* Formatting for the divs that will hold the gifs */
 .cartoonDiv { 
     float: left;
-    width: 300px;
     height: 250px;
     margin: 10px;
 }
 
+/* Formmating for the gifs */
 .cartoonGif {
     max-width: 300px;
     height: 150px;
