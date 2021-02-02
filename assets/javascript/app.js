@@ -86,9 +86,13 @@ $(document).ready(function () {
                     // Prepend the entire div to the div with an id of cartoons
                     $("#cartoons").prepend(cartoonDiv);
                 }
+                // Store a full width div to hold the Character name 
                 var characterNameDiv = $("<div>").attr("class", "w-100 text-center")
+                // Store Character name in H1
                 var characterNameHeader = $("<h1>" + q + "</h1>").attr("class", "mt-3");
+                // Append the character name header into the characterNameDiv
                 characterNameDiv.append(characterNameHeader);
+                // Prepend the characterNameDiv into the dive with an id of cartoons
                 $("#cartoons").prepend(characterNameDiv);
             });
         });
@@ -106,6 +110,9 @@ $(document).ready(function () {
 
             // Call function to create buttons in order to add the button for the the new addition in the array
             cartoonButtons();
+            
+            // Open Modal
+            $("#staticBackdrop").modal("toggle");
         });
 
         // Run below code if any element with a class of cartoonGif is clicked
