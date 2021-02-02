@@ -104,7 +104,7 @@ $(document).ready(function () {
             // Extracts user input from text box
             var cartoon = $("#cartoon-input").val().trim();
             // Clear input bar
-            $("#cartoon-form").children("input").val("")
+            $("#cartoon-input").val("");
             // Adds user input from text box into the cartoons array
             cartoons.push(cartoon);
 
